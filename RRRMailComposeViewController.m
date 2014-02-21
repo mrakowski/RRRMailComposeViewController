@@ -15,8 +15,9 @@
 
 - (id)init
 {
-    if ([super init])
-    {
+    self = [super init];
+    if (self)
+	{
         self.mailComposeDelegate = self;
     }
     return self;
